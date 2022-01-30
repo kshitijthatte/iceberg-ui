@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Avatar</title>
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="./avatar.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img class="nav-logo" src="../../assets/iceberg-logo.svg" alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item"><a>Introduction</a></li>
+          <li class="drawer-item"><a>Colors</a></li>
+          <li class="drawer-item"><a>Typography</a></li>
+          <li class="drawer-item"><a>Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item"><a>Alert</a></li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item"><a>Badge</a></li>
+          <li class="drawer-item"><a>Button</a></li>
+          <li class="drawer-item"><a>Card</a></li>
+          <li class="drawer-item"><a>Image</a></li>
+          <li class="drawer-item"><a>Input</a></li>
+          <li class="drawer-item"><a>Lists</a></li>
+          <li class="drawer-item"><a>Modal</a></li>
+          <li class="drawer-item"><a>Navigation</a></li>
+          <li class="drawer-item"><a>Rating</a></li>
+          <li class="drawer-item"><a>Grid</a></li>
+          <li class="drawer-item"><a>Slider</a></li>
+          <li class="drawer-item"><a>Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Avatar</div>
+          <div class="description">
+            The Avatar component is used to represent a user, and displays the profile picture,
+            initials or an icon.
+          </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Circular avatars</div>
+          <div class="description">
+            Circular avatars can be created by using the 'avatar' class inside the
+            <code>img</code>
+            tag.
+          </div>
+          <div class="demo">
+            <img class="avatar" src="../../assets/avatar/1.jfif" alt="" />
+            <img class="avatar" src="../../assets/avatar/2.jfif" alt="" />
+            <img class="avatar" src="../../assets/avatar/3.jfif" alt="" />
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+&lt;img class="avatar" src="/assets/avatar/1.jfif" alt="" /&gt;
+&lt;img class="avatar" src="/assets/avatar/2.jfif" alt="" /&gt;
+&lt;img class="avatar" src="/assets/avatar/3.jfif" alt="" /&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Rounded avatars</div>
+          <div class="description">
+            Rounded avatars can be created by using the 'avatar-rounded' class along with the
+            'avatar' class inside the
+            <code>img</code>
+            tag.
+          </div>
+          <div class="demo">
+            <img class="avatar avatar-rounded" src="../../assets/avatar/1.jfif" alt="" />
+            <img class="avatar avatar-rounded" src="../../assets/avatar/2.jfif" alt="" />
+            <img class="avatar avatar-rounded" src="../../assets/avatar/3.jfif" alt="" />
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+&lt;img class="avatar avatar-rounded" src="/assets/avatar/1.jfif" alt="" /&gt;
+&lt;img class="avatar avatar-rounded" src="/assets/avatar/2.jfif" alt="" /&gt;
+&lt;img class="avatar avatar-rounded" src="/assets/avatar/3.jfif" alt="" /&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Avatar Sizes</div>
+          <div class="description">
+            The Avatar component comes in 5 sizes. It can be changed by adding 'avatar-xs |
+            avatar-sm | avatar-md | avatar-lg | avatar-xl' class to the existing 'avatar' class.
+          </div>
+          <div class="demo">
+            <img class="avatar avatar-xs" src="../../assets/avatar/1.jfif" alt="" />
+            <img class="avatar avatar-sm" src="../../assets/avatar/1.jfif" alt="" />
+            <img class="avatar avatar-md" src="../../assets/avatar/1.jfif" alt="" />
+            <img class="avatar avatar-lg" src="../../assets/avatar/1.jfif" alt="" />
+            <img class="avatar avatar-xl" src="../../assets/avatar/1.jfif" alt="" />
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+&lt;img class="avatar avatar-xs" src="/assets/avatar/1.jfif" alt="" /&gt;
+&lt;img class="avatar avatar-sm" src="/assets/avatar/1.jfif" alt="" /&gt;
+&lt;img class="avatar avatar-md" src="/assets/avatar/1.jfif" alt="" /&gt;
+&lt;img class="avatar avatar-lg" src="/assets/avatar/1.jfif" alt="" /&gt;
+&lt;img class="avatar avatar-xl" src="/assets/avatar/1.jfif" alt="" /&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">With text</div>
+          <div class="description">
+            The Avatar Component with text can be created using the 'avatar-container' class and
+            then placing 'avatar' inside it. Using the 'avatar-title' &amp; 'avatar-subtitle' class
+            the following style can be achieved.
+          </div>
+          <div class="demo">
+            <div class="avatar-container">
+              <img class="avatar" src="../../assets/avatar/1.jfif" alt="Michael Scarn" />
+              <div class="avatar-details">
+                <div class="avatar-title">Michael Scarn</div>
+                <div class="avatar-subtitle">View Profile</div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+&lt;div class="avatar-container"&gt;
+  &lt;img class="avatar" src="/assets/avatar/1.jfif" alt="Michael Scarn" /&gt;
+  &lt;div class="avatar-details"&gt;
+    &lt;div class="avatar-title"&gt;Michael Scarn&lt;/div&gt;
+    &lt;div class="avatar-subtitle"&gt;View Profile&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>

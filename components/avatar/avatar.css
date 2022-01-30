@@ -1,0 +1,42 @@
+.avatar {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+}
+
+.avatar-rounded {
+  border-radius: 10px;
+}
+
+.avatar-xs {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.avatar-sm {
+  height: 2rem;
+  width: 2rem;
+}
+.avatar-md {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.avatar-lg {
+  height: 3rem;
+  width: 3rem;
+}
+.avatar-xl {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.avatar-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.avatar-title {
+  font-weight: bold;
+}
+.avatar-subtitle {
+  font-size: 0.8rem;
+}
