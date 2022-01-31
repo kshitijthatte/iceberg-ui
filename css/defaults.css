@@ -9,10 +9,11 @@
 :root {
   --primary-color: #034369;
   --tertiary-color: #13edfd;
-  --online-green: #4caf50;
+  --green: #4caf50;
   --white: #ffffff;
   --light-grey: #e0e0e0;
-  --red: #f77170;
+  --red: #e53e3e;
+  --yellow: #fcd34d;
   --primary-hover: #012235;
   --secondary-hover: #f5f5f5;
 }
