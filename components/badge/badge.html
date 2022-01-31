@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Avatar</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../avatar/avatar.css" />
+    <link rel="stylesheet" href="./badge.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item"><a>Introduction</a></li>
+          <li class="drawer-item"><a>Colors</a></li>
+          <li class="drawer-item"><a>Typography</a></li>
+          <li class="drawer-item"><a>Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item"><a>Alert</a></li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item"><a>Button</a></li>
+          <li class="drawer-item"><a>Card</a></li>
+          <li class="drawer-item"><a>Image</a></li>
+          <li class="drawer-item"><a>Input</a></li>
+          <li class="drawer-item"><a>Lists</a></li>
+          <li class="drawer-item"><a>Modal</a></li>
+          <li class="drawer-item"><a>Navigation</a></li>
+          <li class="drawer-item"><a>Rating</a></li>
+          <li class="drawer-item"><a>Grid</a></li>
+          <li class="drawer-item"><a>Slider</a></li>
+          <li class="drawer-item"><a>Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Badge</div>
+          <div class="description">
+            The Badge component superscripts or subscripts an avatar-like icon
+            to highlight information to a user. Content within the badge usually
+            contains numbers or icons.
+          </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Badge on Avatars</div>
+          <div class="description">
+            The badge component can be used by applying 'badge' class and
+            putting that <code>div</code> inside a <code>div</code> with the
+            'badge-container' class. The bagde can further be customized using
+            'bg-green' or 'bg-red' class.
+          </div>
+          <div class="demo">
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/1.jfif" alt="" />
+              <div class="badge"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/2.jfif" alt="" />
+              <div class="badge bg-green"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/3.jfif" alt="" />
+              <div class="badge bg-red"></div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+&lt;div class="badge-container"&gt;
+  &lt;img class="avatar" src="/assets/avatar/1.jfif" alt="" /&gt;
+  &lt;div class="badge"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;img class="avatar" src="/assets/avatar/2.jfif" alt="" /&gt;
+  &lt;div class="badge bg-green"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;img class="avatar" src="/assets/avatar/3.jfif" alt="" /&gt;
+  &lt;div class="badge bg-red"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Badge on Icons</div>
+          <div class="description">
+            To use the badge with icons as a notification badge, place the
+            notification count number inside the 'badge' div.
+          </div>
+          <div class="demo">
+            <div class="badge-container">
+              <img class="icon" src="../../assets/icons/mail_icon.svg" alt="" />
+              <div class="badge">8</div>
+            </div>
+            <div class="badge-container">
+              <img
+                class="icon"
+                src="../../assets/icons/shopping-cart_icon.svg"
+                alt=""
+              />
+              <div class="badge bg-red">2</div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                  <code class="html">
+&lt;div class="badge-container"&gt;
+  &lt;img class="icon" src="/assets/icons/mail_icon.svg" alt="" /&gt;
+  &lt;div class="badge"&gt;8&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;img class="icon" src="/assets/icons/shopping-cart_icon.svg" alt="" /&gt;
+  &lt;div class="badge bg-red"&gt;2&lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+              </pre>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Bottom Badge</div>
+          <div class="description">
+            Position of the badge can be changed to bottom-right by using the
+            'badge-b' class, along with 'badge' class.
+          </div>
+          <div class="demo">
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/1.jfif" alt="" />
+              <div class="badge badge-b bg-green"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/2.jfif" alt="" />
+              <div class="badge badge-b bg-green"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/3.jfif" alt="" />
+              <div class="badge badge-b bg-green"></div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                  <code class="html">
+  &lt;div class="badge-container"&gt;
+    &lt;img class="avatar" src="/assets/avatar/1.jfif" alt="" /&gt;
+    &lt;div class="badge badge-b bg-green"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+                  </code>
+              </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Badge Sizes</div>
+          <div class="description">
+            The Badge component comes in 3 sizes. It can be changed by adding
+            'badge-sm | badge-md | badge-lg' class to the existing 'badge'
+            class.
+          </div>
+          <div class="demo">
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/1.jfif" alt="" />
+              <div class="badge badge-b bg-green badge-sm"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar" src="../../assets/avatar/2.jfif" alt="" />
+              <div class="badge badge-md"></div>
+            </div>
+            <div class="badge-container">
+              <img
+                class="icon"
+                src="../../assets/icons/shopping-cart_icon.svg"
+                alt=""
+              />
+              <div class="badge bg-red badge-lg">2</div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                  <code class="html">
+
+&lt;div class="badge-container"&gt;
+  &lt;img class="avatar" src="/assets/avatar/1.jfif" alt="" /&gt;
+  &lt;div class="badge badge-b bg-green badge-sm"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;img class="avatar" src="/assets/avatar/1.jfif" alt="" /&gt;
+  &lt;div class="badge badge-md"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;img class="icon" src="/assets/icons/shopping-cart_icon.svg" alt="" /&gt;
+  &lt;div class="badge bg-red badge-lg"&gt;2&lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+              </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
