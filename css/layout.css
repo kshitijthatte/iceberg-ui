@@ -83,6 +83,10 @@
   gap: 1rem;
 }
 
+.demo-code code {
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 700px) {
   .container {
     flex-direction: column;
