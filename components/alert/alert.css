@@ -8,39 +8,40 @@
   opacity: 0.9;
 }
 
-.primary {
+.alert-primary {
   background-color: var(--primary-color);
 }
 
-.success {
+.alert-success {
   background-color: var(--green);
 }
 
-.warning {
+.alert-warning {
   background-color: var(--yellow);
 }
-.error {
+
+.alert-error {
   background-color: var(--red);
 }
 
-.outline-primary {
+.alert.outline-primary {
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
   filter: brightness(90%);
 }
 
-.outline-success {
+.alert.outline-success {
   color: var(--green);
   border: 2px solid var(--green);
   filter: brightness(90%);
 }
 
-.outline-warning {
+.alert.outline-warning {
   color: var(--yellow);
   border: 2px solid var(--yellow);
   filter: brightness(90%);
 }
-.outline-error {
+.alert.outline-error {
   color: var(--red);
   border: 2px solid var(--red);
   filter: brightness(90%);
