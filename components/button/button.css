@@ -1,14 +1,14 @@
 .btn {
   color: var(--white);
   border-radius: 4px;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   margin: 0.5rem 0;
   font-size: 1rem;
   border: none;
   cursor: pointer;
 }
 .btn:hover {
-  opacity: 0.8;
+  filter: brightness(80%);
 }
 
 .btn-primary {
@@ -29,6 +29,15 @@
 
 .btn-error {
   background-color: var(--red);
+}
+
+.btn-transparent {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.btn-transparent:hover {
+  background-color: var(--tertiary-color);
 }
 
 .btn.outline-primary {
@@ -57,9 +66,7 @@
 }
 
 .btn.btn-icon img {
-  width: 1.2rem;
-  height: 1.2rem;
-  filter: invert(100%);
+  width: 1rem;
 }
 
 .btn a {
@@ -71,13 +78,13 @@
 }
 
 .btn-sm {
-  padding: 0.7rem 1rem;
+  padding: 0.8rem;
 }
 
 .btn-md {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
 }
 
 .btn-lg {
-  padding: 1.3rem 2rem;
+  padding: 1.2rem;
 }
