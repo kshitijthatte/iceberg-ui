@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Alert</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="alert.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="../../get-started/introduction.html">Introduction</a>
+          </li>
+          <li class="drawer-item"><a>Colors</a></li>
+          <li class="drawer-item"><a>Typography</a></li>
+          <li class="drawer-item"><a>Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/alert/alert.html">Alert</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/button/button.html">Button</a>
+          </li>
+          <li class="drawer-item"><a>Card</a></li>
+          <li class="drawer-item"><a>Image</a></li>
+          <li class="drawer-item"><a>Input</a></li>
+          <li class="drawer-item"><a>Lists</a></li>
+          <li class="drawer-item"><a>Modal</a></li>
+          <li class="drawer-item"><a>Navigation</a></li>
+          <li class="drawer-item"><a>Rating</a></li>
+          <li class="drawer-item"><a>Grid</a></li>
+          <li class="drawer-item"><a>Slider</a></li>
+          <li class="drawer-item"><a>Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Alert</div>
+          <div class="description">
+            The Alert component is used to convey important information to the
+            user. These default types come in 4 variations: primary, success,
+            warning, and error.
+          </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Simple Alert</div>
+          <div class="description">
+            Simple Alert can be created using alert class, followed by the
+            variant name.
+          </div>
+          <div class="demo">
+            <div class="alert alert-primary">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-success">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert alert-warning">
+              A simple warning alert—check it out!
+            </div>
+            <div class="alert alert-error">
+              A simple error alert—check it out!
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="alert alert-primary"&gt;
+    A simple primary alert—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert alert-success"&gt;
+    A simple success alert—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert alert-warning"&gt;
+    A simple warning alert—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert alert-error"&gt;
+    A simple error alert—check it out!
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Outline Alert</div>
+          <div class="description">
+            Outline alert can be created by using 'alert' class, followed by
+            'outline-variant'.
+          </div>
+          <div class="demo">
+            <div class="alert outline-primary">
+              An outline primary alert—check it out!
+            </div>
+            <div class="alert outline-success">
+              An outline success alert—check it out!
+            </div>
+            <div class="alert outline-warning">
+              An outline warning alert—check it out!
+            </div>
+            <div class="alert outline-error">
+              An outline error alert—check it out!
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="alert outline-primary"&gt;
+    An outline primary alert—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert outline-success"&gt;
+    An outline success alert—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert outline-warning"&gt;
+    An outline warning alert—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert outline-error"&gt;
+    An outline error alert—check it out!
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Alert with accent border</div>
+          <div class="description">
+            Alert with accent border can only be created with Simple Alerts.
+            <br />
+            Utility classes 'alert-b-t | alert-b-r | alert-b-b | alert-b-l' can
+            be used to give border on top | right | bottom | left.
+          </div>
+          <div class="demo">
+            <div class="alert alert-primary alert-b-l">
+              A simple primary alert with accent border—check it out!
+            </div>
+            <div class="alert alert-success alert-b-t">
+              A simple success alert with accent border—check it out!
+            </div>
+            <div class="alert alert-warning alert-b-b">
+              A simple warning alert with accent border—check it out!
+            </div>
+            <div class="alert alert-error alert-b-r">
+              A simple error alert with accent border—check it out!
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="alert alert-primary alert-b-l"&gt;
+    A simple primary alert with accent border—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert alert-success alert-b-t"&gt;
+    A simple success alert with accent border—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert alert-warning alert-b-b"&gt;
+    A simple warning alert with accent border—check it out!
+  &lt;/div&gt;
+  &lt;div class="alert alert-error alert-b-r"&gt;
+    A simple error alert with accent border—check it out!
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
