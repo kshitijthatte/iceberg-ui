@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Card</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../button/button.css" />
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="../../get-started/introduction.html">Introduction</a>
+          </li>
+          <li class="drawer-item"><a>Colors</a></li>
+          <li class="drawer-item"><a>Typography</a></li>
+          <li class="drawer-item"><a>Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/components/alert/alert.html">Alert</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/button/button.html">Button</a>
+          </li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/card/card.html">Card</a>
+          </li>
+          <li class="drawer-item"><a>Image</a></li>
+          <li class="drawer-item"><a>Input</a></li>
+          <li class="drawer-item"><a>Lists</a></li>
+          <li class="drawer-item"><a>Modal</a></li>
+          <li class="drawer-item"><a>Navigation</a></li>
+          <li class="drawer-item"><a>Rating</a></li>
+          <li class="drawer-item"><a>Grid</a></li>
+          <li class="drawer-item"><a>Slider</a></li>
+          <li class="drawer-item"><a>Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Card</div>
+          <div class="description">
+            Cards are containers that can display content and actions on a
+            single topic. They should be easy to scan for relevant and
+            actionable information.
+          </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Basic Card</div>
+          <div class="description">
+            Create a basic card with img and description by using 'card' class
+            on a div and giving 'card-img' &amp; 'card-description' class to
+            it's child image and div element.
+          </div>
+          <div class="demo">
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://picsum.photos/300/200"
+                alt=""
+              />
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="card"&gt;
+    &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;div&gt;
+  &lt;div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Card with Title & Subtitle</div>
+          <div class="description">
+            Card with Title & Subtitle can be created using 'card-title' and
+            'card-subtitle' class inside the 'card' component. As per the
+            requirement, both classes or just a single class can be used.
+          </div>
+          <div class="demo">
+            <div class="card">
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://picsum.photos/300/200"
+                alt=""
+              />
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="card"&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Kurt Wagner&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card"&gt;
+    &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Kurt Wagner&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;/div&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Card with Action Buttons</div>
+          <div class="description">
+            Card with Action Buttons can be created by using the 'card-actions'
+            class on a div, inside the 'card' component. To position actions in
+            the right end of the card use 'card-actions-right' class on a div,
+            inside the 'card-actions'.
+          </div>
+          <div class="demo">
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://picsum.photos/300/200"
+                alt=""
+              />
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-sm btn-transparent">Read</button>
+                <button class="btn btn-sm btn-transparent">Bookmark</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://picsum.photos/300/200"
+                alt=""
+              />
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-sm btn-transparent">Read</button>
+                <div class="card-actions-right">
+                  <button class="btn card-icon material-icons">
+                    favorite_border
+                  </button>
+                  <button class="btn card-icon material-icons">share</button>
+                  <button class="btn card-icon material-icons">
+                    more_vert
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="card"&gt;
+    &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Michael Scarn&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;/div&gt;
+    &lt;div class="card-actions"&gt;
+      &lt;button class="btn btn-sm btn-transparent"&gt;Read&lt;/button&gt;
+      &lt;button class="btn btn-sm btn-transparent"&gt;Bookmark&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card"&gt;
+    &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Michael Scarn&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;/div&gt;
+    &lt;div class="card-actions"&gt;
+      &lt;button class="btn btn-sm btn-transparent"&gt;Read&lt;/button&gt;
+      &lt;div class="card-actions-right"&gt;
+        &lt;button class="btn card-icon material-icons"&gt;favorite_border&lt;/button&gt;
+        &lt;button class="btn card-icon material-icons"&gt;share&lt;/button&gt;
+        &lt;button class="btn card-icon material-icons"&gt;more_vert&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Cards with Text Overlay</div>
+          <div class="description">
+            Cards with text overlay can be created by using the 'card-overlay'
+            class along with the 'card' class. Then wrap the content that you
+            want to overlay in a div with class 'overlay-content'. This div must
+            be next sibling to 'card-img' element.
+          </div>
+          <div class="demo">
+            <div class="card card-overlay">
+              <img
+                class="card-img"
+                src="https://picsum.photos/300/200"
+                alt=""
+              />
+              <div class="overlay-content">
+                <div class="card-title">Our Changing Planet</div>
+                <div class="card-subtitle">by Michael Scarn</div>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-sm btn-transparent">Read</button>
+                <div class="card-actions-right">
+                  <button class="btn card-icon material-icons">
+                    favorite_border
+                  </button>
+                  <button class="btn card-icon material-icons">share</button>
+                  <button class="btn card-icon material-icons">
+                    more_vert
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="card card-overlay"&gt;
+    &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+    &lt;div class="overlay-content"&gt;
+      &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+      &lt;div class="card-subtitle"&gt;by Michael Scarn&lt;/div&gt;
+    &lt;/div&gt; 
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;/div&gt;
+    &lt;div class="card-actions"&gt;
+      &lt;button class="btn btn-sm btn-transparent"&gt;Read&lt;/button&gt;
+      &lt;div class="card-actions-right"&gt;
+        &lt;button class="btn card-icon material-icons"&gt;favorite_border&lt;/button&gt;
+        &lt;button class="btn card-icon material-icons"&gt;share&lt;/button&gt;
+        &lt;button class="btn card-icon material-icons"&gt;more_vert&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Horizontal Card</div>
+          <div class="description">
+            Horizontal Card can be created using the 'card-horizontal' class. on
+            a div, inside the 'card'. With that use the 'card-content' class to
+            put the card content horizontally along the image.
+          </div>
+          <div class="demo">
+            <div class="card">
+              <div class="card-horizontal">
+                <img
+                  class="card-img"
+                  src="https://picsum.photos/300/200"
+                  alt=""
+                />
+                <div class="card-content">
+                  <div class="card-title">Our Changing Planet</div>
+                  <div class="card-subtitle">by Michael Scarn</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-sm btn-transparent">Read</button>
+                <div class="card-actions-right">
+                  <button class="btn card-icon material-icons">
+                    favorite_border
+                  </button>
+                  <button class="btn card-icon material-icons">share</button>
+                  <button class="btn card-icon material-icons">
+                    more_vert
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="card"&gt;
+    &lt;div class="card-horizontal"&gt;
+      &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+      &lt;div class="card-content"&gt;
+        &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+        &lt;div class="card-subtitle"&gt;by Michael Scarn&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card-actions"&gt;
+      &lt;button class="btn btn-sm btn-transparent"&gt;Read&lt;/button&gt;
+      &lt;div class="card-actions-right"&gt;
+        &lt;button class="btn card-icon material-icons"&gt;favorite_border&lt;/button&gt;
+        &lt;button class="btn card-icon material-icons"&gt;share&lt;/button&gt;
+        &lt;button class="btn card-icon material-icons"&gt;more_vert&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

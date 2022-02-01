@@ -1,0 +1,90 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 22rem;
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  padding-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem 1rem 0;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.card-description {
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--light-gray);
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.card-actions-right {
+  margin-left: auto;
+}
+
+.card-icon {
+  background: transparent;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  color: var(--light-gray);
+}
+.card-icon:hover {
+  background-color: var(--secondary-hover);
+  border-radius: 50%;
+}
+
+.card-overlay {
+  position: relative;
+}
+
+.card-overlay .card-img {
+  filter: brightness(80%);
+  padding-bottom: 0;
+}
+
+.card-overlay .overlay-content {
+  position: absolute;
+  color: var(--white);
+}
+
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-horizontal .card-img {
+  padding-bottom: 0;
+  height: 7rem;
+  width: 7rem;
+}
+
+.card-horizontal .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-description + .card-actions,
+.card-img + .card-title,
+.card-img + .card-description {
+  margin-top: -1rem;
+}
