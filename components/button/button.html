@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Button</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="button.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="../../get-started/introduction.html">Introduction</a>
+          </li>
+          <li class="drawer-item"><a>Colors</a></li>
+          <li class="drawer-item"><a>Typography</a></li>
+          <li class="drawer-item"><a>Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/components/alert/alert.html">Alert</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/button/button.html">Button</a>
+          </li>
+          <li class="drawer-item"><a>Card</a></li>
+          <li class="drawer-item"><a>Image</a></li>
+          <li class="drawer-item"><a>Input</a></li>
+          <li class="drawer-item"><a>Lists</a></li>
+          <li class="drawer-item"><a>Modal</a></li>
+          <li class="drawer-item"><a>Navigation</a></li>
+          <li class="drawer-item"><a>Rating</a></li>
+          <li class="drawer-item"><a>Grid</a></li>
+          <li class="drawer-item"><a>Slider</a></li>
+          <li class="drawer-item"><a>Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Button</div>
+          <div class="description">
+            The Button component is used to trigger an action or event, such as
+            submitting a form, opening a dialog, canceling an action, or
+            performing a delete operation.
+          </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Button variants</div>
+          <div class="description">
+            To create a button use a 'btn' class along with the prefered variant
+            class from 'btn-primary | btn-secondary | btn-success | btn-error'.
+          </div>
+          <div class="demo">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-error">Error</button>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+  &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+  &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+  &lt;button class="btn btn-error"&gt;Error&lt;/button&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Icon Button</div>
+          <div class="description">
+            Icon Buttons can be created, by using a icon img as a child to
+            parent button. Use the 'btn' class followed by 'btn-icon'.
+          </div>
+          <div class="demo">
+            <button class="btn btn-primary btn-icon">
+              <img src="../../assets/icons/shopping-cart_icon.svg" alt="cart" />
+              Cart
+            </button>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;button class="btn btn-primary btn-icon"&gt;
+    &lt;img src="/assets/icons/shopping-cart_icon.svg" alt="cart" /&gt;
+    Cart
+  &lt;/button&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Link Button</div>
+          <div class="description">
+            To create a link button, no especial classes are needed. Just use an
+            <code>a</code> tag inside the 'btn' component.
+          </div>
+          <div class="demo">
+            <button class="btn btn-primary">
+              <a href="https://iceberg-ui.netlify.app/" target="_"> iceberg </a>
+            </button>
+            <button class="btn btn-primary btn-icon">
+              <a href="https://www.facebook.com/" target="_">
+                <img
+                  src="../../assets/icons/facebook_icon.svg"
+                  alt="facebook_icon"
+                />
+                facebook
+              </a>
+            </button>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;button class="btn btn-primary"&gt;
+    &lt;a href="https://iceberg-ui.netlify.app/" target="_"&gt; iceberg &lt;/a&gt;
+  &lt;/button&gt;
+  &lt;button class="btn btn-primary btn-icon"&gt;
+    &lt;img src="facebook_icon.svg" alt="facebook_icon" /&gt;
+    &lt;a href="https://www.facebook.com/"&gt;facebook&lt;/a&gt;
+  &lt;/button&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Round Button</div>
+          <div class="description">
+            To create a Round button add the 'btn-round' class to the 'btn'
+            component.
+          </div>
+          <div class="demo">
+            <button class="btn btn-primary btn-round">Primary</button>
+            <button class="btn btn-secondary btn-round">Secondary</button>
+            <button class="btn btn-success btn-round">Success</button>
+            <button class="btn btn-error btn-round">Error</button>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;button class="btn btn-primary btn-round"&gt;Primary&lt;/button&gt;
+  &lt;button class="btn btn-secondary btn-round"&gt;Secondary&lt;/button&gt;
+  &lt;button class="btn btn-success btn-round"&gt;Success&lt;/button&gt;
+  &lt;button class="btn btn-error btn-round"&gt;Error&lt;/button&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Outline Button</div>
+          <div class="description">
+            In need of a button, but not the hefty background colors they bring?
+            Replace '.btn-variant' with '.outline-variant'.
+          </div>
+          <div class="demo">
+            <button class="btn outline-primary">Primary</button>
+            <button class="btn outline-secondary">Secondary</button>
+            <button class="btn outline-success">Success</button>
+            <button class="btn outline-error">Error</button>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;button class="btn outline-primary"&gt;Primary&lt;/button&gt;
+  &lt;button class="btn outline-secondary"&gt;Secondary&lt;/button&gt;
+  &lt;button class="btn outline-success"&gt;Success&lt;/button&gt;
+  &lt;button class="btn outline-error"&gt;Error&lt;/button&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Button Sizes</div>
+          <div class="description">
+            The Button component comes in 3 sizes. It can be changed by adding
+            'btn-sm | btn-md | btn-lg' class to the existing 'btn' class.
+          </div>
+          <div class="demo">
+            <button class="btn btn-primary btn-sm">Primary</button>
+            <button class="btn btn-primary btn-md">Primary</button>
+            <button class="btn btn-primary btn-lg">Primary</button>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;button class="btn btn-primary btn-sm"&gt;Primary&lt;/button&gt;
+  &lt;button class="btn btn-primary btn-md"&gt;Primary&lt;/button&gt;
+  &lt;button class="btn btn-primary btn-lg"&gt;Primary&lt;/button&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
