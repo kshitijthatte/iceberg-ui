@@ -399,6 +399,138 @@
             </pre>
           </div>
         </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Card with Badge</div>
+          <div class="description">
+            Card with Badge can be created using 'card-badge' class along with
+            the 'card' class and then using 'c-badge-left' or 'c-badge-right'
+            class on a child div to position it left or right as per the
+            requirement. It's not recomended to use the 'c-badge-left' on a text
+            only card.
+          </div>
+          <div class="demo">
+            <div class="card card-badge">
+              <div class="c-badge-right">New</div>
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+            </div>
+            <div class="card card-badge">
+              <img
+                class="card-img"
+                src="https://picsum.photos/300/200"
+                alt=""
+              />
+              <div class="c-badge-left">New</div>
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="card card-badge"&gt;
+    &lt;div class="c-badge-right"&gt;New&lt;/div&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Kurt Wagner&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card card-badge"&gt;
+    &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+    &lt;div class="c-badge-left"&gt;New&lt;/div&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Kurt Wagner&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam!
+    &lt;/div&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Dismissable Card</div>
+          <div class="description">
+            Dismissable Card can be created using 'card-actions' buttons. It can
+            also be created using 'card-badge' class, give the button
+            'c-badge-right' class along with 'card-icon' class.
+          </div>
+          <div class="demo">
+            <div class="card card-badge">
+              <button class="btn card-icon c-badge-right material-icons">
+                cancel
+              </button>
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://picsum.photos/300/200"
+                alt=""
+              />
+              <div class="card-title">Our Changing Planet</div>
+              <div class="card-subtitle">by Michael Scarn</div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                nam!
+              </div>
+              <div class="card-actions">
+                <div class="card-actions-right">
+                  <button class="btn card-icon material-icons">cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="card card-badge"&gt;
+    &lt;button class="btn card-icon c-badge-right material-icons"&gt;cancel&lt;/button&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Michael Scarn&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+      nam!
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="card"&gt;
+    &lt;img class="card-img" src="https://picsum.photos/300/200" /&gt;
+    &lt;div class="card-title"&gt;Our Changing Planet&lt;/div&gt;
+    &lt;div class="card-subtitle"&gt;by Michael Scarn&lt;/div&gt;
+    &lt;div class="card-description"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+      nam!
+    &lt;/div&gt;
+    &lt;div class="card-actions"&gt;
+      &lt;div class="card-actions-right"&gt;
+        &lt;button class="btn card-icon material-icons"&gt;cancel&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
       </main>
     </div>
 

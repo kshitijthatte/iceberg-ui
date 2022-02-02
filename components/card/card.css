@@ -83,6 +83,38 @@
   justify-content: center;
 }
 
+.card-badge {
+  position: relative;
+}
+
+.c-badge-right,
+.c-badge-left {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  background-color: var(--light-blue);
+  color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.c-badge-left {
+  right: auto;
+  left: 1rem;
+}
+
+.card-icon.c-badge-right {
+  margin: 0;
+  font-size: 1.3rem;
+  background-color: transparent;
+  color: var(--light-gray);
+}
+.card-icon.c-badge-right:hover {
+  background-color: var(--secondary-hover);
+}
+
 .card-description + .card-actions,
 .card-img + .card-title,
 .card-img + .card-description {
