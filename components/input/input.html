@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Badge</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="../../get-started/introduction.html">Introduction</a>
+          </li>
+          <li class="drawer-item"><a>Colors</a></li>
+          <li class="drawer-item"><a>Typography</a></li>
+          <li class="drawer-item"><a>Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/components/alert/alert.html">Alert</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/button/button.html">Button</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/card/card.html">Card</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/image/image.html">Image</a>
+          </li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/input/input.html">Input</a>
+          </li>
+          <li class="drawer-item"><a>Lists</a></li>
+          <li class="drawer-item"><a>Modal</a></li>
+          <li class="drawer-item"><a>Navigation</a></li>
+          <li class="drawer-item"><a>Rating</a></li>
+          <li class="drawer-item"><a>Grid</a></li>
+          <li class="drawer-item"><a>Slider</a></li>
+          <li class="drawer-item"><a>Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Input</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            voluptas et a sapiente fugit doloribus.
+          </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="content">
+          <div class="content-title">Text Input with label</div>
+          <div class="description">
+            To create stylized text input, put your input label and input
+            element inside a div with class 'input-group'.
+          </div>
+          <div class="demo">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                class="input"
+                placeholder="Enter your username"
+              />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="input"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="input-group"&gt;
+    &lt;label for="username"&gt;Username&lt;/label&gt;
+    &lt;input type="text" class="input" id="username" placeholder="Enter your username" /&gt;
+    &lt;label for="password"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="input" id="password" placeholder="Enter your password" /&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="content">
+          <div class="content-title">Text Input with validation error</div>
+          <div class="description">
+            To create a text input with validation error, inside the
+            'input-group' div give the 'input-error' class to the element you
+            want to show error and use 'error-message' on a div followed by the
+            'input-error' div.
+          </div>
+          <div class="demo">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="input"
+                id="username"
+                placeholder="Enter your username"
+              />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="input input-error"
+                id="password"
+                placeholder="Enter your password"
+              />
+              <div class="error-message">
+                Your password must be at least 6 characters long.
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="input-group"&gt;
+    &lt;label for="username"&gt;Username&lt;/label&gt;
+    &lt;input type="text" id="username" placeholder="Enter your username" /&gt;
+    &lt;label for="password"&gt;Password&lt;/label&gt;
+    &lt;input type="password" id="password" placeholder="Enter your password" /&gt;
+    &lt;div class="error-message"&gt;
+      Your password must be at least 6 characters long.
+    &lt;/div&gt;                  
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
