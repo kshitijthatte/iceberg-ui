@@ -1,0 +1,28 @@
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-sq-sm,
+.img-sq-md,
+.img-sq-lg {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.img-sq-sm {
+  width: 150px;
+  height: 150px;
+}
+.img-sq-md {
+  width: 200px;
+  height: 200px;
+}
+.img-sq-lg {
+  width: 250px;
+  height: 250px;
+}
+
+.img-round {
+  border-radius: 100%;
+}
