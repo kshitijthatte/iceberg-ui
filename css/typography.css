@@ -1,0 +1,39 @@
+.text-xl {
+  font-size: 2.5rem;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.text-md {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 1rem;
+}
+
+.text-xs {
+  font-size: 0.8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-grey {
+  color: var(--light-grey);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-red {
+  color: var(--red);
+}

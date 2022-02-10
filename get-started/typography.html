@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Typography</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/get-started/introduction.html">Introduction</a>
+          </li>
+          <li class="drawer-item"><a href="#">Colors</a></li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/get-started/typography.html">Typography</a>
+          </li>
+          <li class="drawer-item"><a href="#">Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/components/alert/alert.html">Alert</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/button/button.html">Button</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/card/card.html">Card</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/image/image.html">Image</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/input/input.html">Input</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/lists/lists.html">Lists</a>
+          </li>
+          <li class="drawer-item"><a href="#">Modal</a></li>
+          <li class="drawer-item"><a href="#">Navigation</a></li>
+          <li class="drawer-item"><a href="#">Rating</a></li>
+          <li class="drawer-item"><a href="#">Grid</a></li>
+          <li class="drawer-item"><a href="#">Slider</a></li>
+          <li class="drawer-item"><a href="#">Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Typography</div>
+          <div class="description">
+            Documentation and examples for typography, including default
+            headings and diffrent text utilities.
+          </div>
+        </header>
+
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Headings</div>
+          <div class="description">
+            All HTML headings, &lt;h1&gt; through &lt;h6&gt;, are available.
+          </div>
+          <div class="demo">
+            <div class="demo-typography">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;h1&gt;Heading 1&lt;/h1&gt;
+  &lt;h2&gt;Heading 2&lt;/h2&gt;
+  &lt;h3&gt;Heading 3&lt;/h3&gt;
+  &lt;h4&gt;Heading 4&lt;/h4&gt;
+  &lt;h5&gt;Heading 5&lt;/h5&gt;
+  &lt;h6&gt;Heading 6&lt;/h6&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Font Sizes</div>
+          <div class="description">
+            Three font sizes are available, use classes 'text-xl', 'text-lg',
+            'text-md', 'text-sm', 'text-xs' for extra large, large, medium,
+            small and extra-small text.
+          </div>
+          <div class="demo">
+            <div class="demo-typography">
+              <div class="text-xl">Extra Large Text</div>
+              <div class="text-lg">Large Text</div>
+              <div class="text-md">Medium Text</div>
+              <div class="text-sm">Small Text</div>
+              <div class="text-xs">Extra Small Text</div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="text-xl"&gt;Extra Large Text&lt;/div&gt;
+  &lt;div class="text-lg"&gt;Large Text&lt;/div&gt;
+  &lt;div class="text-md"&gt;Medium Text&lt;/div&gt;
+  &lt;div class="text-sm"&gt;Small Text&lt;/div&gt;
+  &lt;div class="text-xs"&gt;Extra Small Text&lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Center Text</div>
+          <div class="description">
+            To create center text, use 'text-center' class.
+          </div>
+          <div class="demo">
+            <div class="demo-typography">
+              <div class="text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                asperiores officia impedit placeat excepturi aperiam quia, quam
+                nam, ut eius ratione dolorum, consequuntur architecto debitis
+                ullam ipsa quod soluta culpa!
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="text-center"&gt; 
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+    asperiores officia impedit placeat excepturi aperiam quia, quam
+    nam, ut eius ratione dolorum, consequuntur architecto debitis
+    ullam ipsa quod soluta culpa!
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Colored Text</div>
+          <div class="description">
+            To create colored text, use 'text-primary | text-grey | text-white |
+            text-red' class.
+          </div>
+          <div class="demo">
+            <div class="demo-typography">
+              <div class="demo-typography">
+                <div class="text-primary">Primary Text</div>
+                <div class="text-grey">Grey Text</div>
+                <div class="text-white">White Text</div>
+                <div class="text-red">Red Text</div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="text-primary"&gt;Primary Text&lt;/div&gt;
+  &lt;div class="text-grey"&gt;Grey Text&lt;/div&gt;
+  &lt;div class="text-white"&gt;White Text&lt;/div&gt;
+  &lt;div class="text-red"&gt;Red Text&lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
