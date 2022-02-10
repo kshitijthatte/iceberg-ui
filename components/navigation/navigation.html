@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Navigation</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/get-started/introduction.html">Introduction</a>
+          </li>
+          <li class="drawer-item"><a href="#">Colors</a></li>
+          <li class="drawer-item">
+            <a href="/get-started/typography.html">Typography</a>
+          </li>
+          <li class="drawer-item"><a href="#">Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/components/alert/alert.html">Alert</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/button/button.html">Button</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/card/card.html">Card</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/image/image.html">Image</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/input/input.html">Input</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/lists/lists.html">Lists</a>
+          </li>
+          <li class="drawer-item"><a href="#">Modal</a></li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/navigation/navigation.html">Navigation</a>
+          </li>
+          <li class="drawer-item"><a href="#">Rating</a></li>
+          <li class="drawer-item"><a href="#">Grid</a></li>
+          <li class="drawer-item"><a href="#">Slider</a></li>
+          <li class="drawer-item"><a href="#">Toast (Snackbar)</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Navigation</div>
+          <div class="description">
+            Navigation component has a navbar, that can be used to display
+            important information about the page and carry the action items
+            related to the current page or can be used to move to a diffrent
+            page.
+          </div>
+        </header>
+
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Standard Navigation</div>
+          <div class="description">
+            To create a standard nav bar, use 'nav' class on an element and use
+            'nav-section' inside the 'nav' to create diffrent section. To create
+            a right aligned section use the class, 'nav-section-right' along
+            with 'nav-section' class.
+            <br />
+            <a target="_" href="./demo-1.html">View Demo</a>
+          </div>
+          <iframe class="demo" src="./demo-1.html" frameborder="1"> </iframe>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;nav class="nav"&gt;
+    &lt;div class="nav-section"&gt;
+      &lt;button class="material-icons nav-icon"&gt;menu&lt;/button&gt;
+      &lt;span class="nav-title"&gt;Brand Name&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-section nav-section-right"&gt;
+      &lt;button class="material-icons nav-icon"&gt;file_download&lt;/button&gt;
+      &lt;button class="material-icons nav-icon"&gt;print&lt;/button&gt;
+      &lt;button class="material-icons nav-icon"&gt;bookmark&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Fixed Navigation</div>
+          <div class="description">
+            To create a fixed navbar use class 'nav-fixed' along with 'nav'
+            class. Also to avoid overlapping use 'nav-fixed-adjust' adjust class
+            on the element next to 'nav-fixed' navbar.
+            <br />
+            <a target="_" href="./demo-2.html">View Demo</a>
+          </div>
+          <iframe class="demo" src="./demo-2.html" frameborder="1"> </iframe>
+          <div class="demo-code">
+            <pre>
+                  <code class="html">
+    &lt;nav class="nav nav-fixed"&gt;
+      &lt;div class="nav-section"&gt;
+        &lt;button class="material-icons nav-icon"&gt;menu&lt;/button&gt;
+        &lt;span class="nav-title"&gt;Brand Name&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="nav-section nav-section-right"&gt;
+        &lt;button class="material-icons nav-icon"&gt;file_download&lt;/button&gt;
+        &lt;button class="material-icons nav-icon"&gt;print&lt;/button&gt;
+        &lt;button class="material-icons nav-icon"&gt;bookmark&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div class="nav-fixed-adjust"&gt;
+      ...
+    &lt;/div&gt;
+                  </code>
+              </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
