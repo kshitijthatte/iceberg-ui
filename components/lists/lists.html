@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iceberg UI - Badge</title>
+    <title>Iceberg UI - Lists</title>
     <link
       rel="shortcut icon"
       href="../../assets/favicon.ico"
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="../../css/nav.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
-    <link rel="stylesheet" href="./image.css" />
+    <link rel="stylesheet" href="../lists/lists.css" />
   </head>
   <body>
     <nav class="nav">
@@ -46,7 +46,7 @@
         <div class="drawer-subheader">Get Started</div>
         <ul>
           <li class="drawer-item">
-            <a href="/get-started/introduction.html">Introduction</a>
+            <a href="..//get-started/introduction.html">Introduction</a>
           </li>
           <li class="drawer-item"><a href="#">Colors</a></li>
           <li class="drawer-item">
@@ -72,13 +72,13 @@
           <li class="drawer-item">
             <a href="/components/card/card.html">Card</a>
           </li>
-          <li class="drawer-item drawer-item-active">
+          <li class="drawer-item">
             <a href="/components/image/image.html">Image</a>
           </li>
           <li class="drawer-item">
             <a href="/components/input/input.html">Input</a>
           </li>
-          <li class="drawer-item">
+          <li class="drawer-item drawer-item-active">
             <a href="/components/lists/lists.html">Lists</a>
           </li>
           <li class="drawer-item"><a href="#">Modal</a></li>
@@ -92,107 +92,74 @@
 
       <main class="main">
         <header class="header">
-          <div class="header-title">Image</div>
+          <div class="header-title">Lists</div>
           <div class="description">
-            The Image component is used to display images. It can be responsive
-            or of a fixed size and shape.
+            A list can be used for displaying a series of content. The content
+            can consist of multiple elements of varying type and size.
           </div>
         </header>
 
-        <div class="divider"></div>
+        <hr class="divider" />
 
         <div class="content">
-          <div class="content-title">Responsive Images</div>
+          <div class="content-title">Spaced Lists</div>
           <div class="description">
-            Images can be made responsive with 'img-responsive' class. Use this
-            if you want to scale image with the parent's width.
+            To create a normal spaced list, use class 'list-group' on a 'ul' tag
+            and then inside that use class 'list-item' for children list items.
           </div>
           <div class="demo">
-            <img
-              src="https://picsum.photos/1080/360"
-              class="img-responsive"
-              alt=""
-            />
+            <ul class="list-group">
+              <li class="list-item">An item</li>
+              <li class="list-item">A second item</li>
+              <li class="list-item">A third item</li>
+              <li class="list-item">A fourth item</li>
+              <li class="list-item">And a fifth one</li>
+            </ul>
           </div>
           <div class="demo-code">
             <pre>
                 <code class="html">
-  &lt;img src="..." class="img-responsive" alt="..." /&gt;
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-item"&gt;An item&lt;/li&gt;
+    &lt;li class="list-item"&gt;A second item&lt;/li&gt;
+    &lt;li class="list-item"&gt;A third item&lt;/li&gt;
+    &lt;li class="list-item"&gt;A fourth item&lt;/li&gt;
+    &lt;li class="list-item"&gt;And a fifth one&lt;/li&gt;
+  &lt;/ul&gt;
                 </code>
             </pre>
           </div>
         </div>
 
-        <div class="divider"></div>
+        <hr class="divider" />
 
         <div class="content">
-          <div class="content-title">Square Images</div>
+          <div class="content-title">Stacked Lists</div>
           <div class="description">
-            The squared image, crops the image into a square. You can make
-            square images in one of the 3 sizes. Using the class 'img-sq-sm |
-            img-sq-md | img-sq-lg' to create small image of 150x150, medium of
-            200x200 or large of 250x250.
+            To create Stacked Lists, inside 'list-group' element use class
+            'list-item-stacked' oon list items.
           </div>
           <div class="demo">
-            <img
-              src="https://picsum.photos/1080/360"
-              class="img-sq-sm"
-              alt=""
-            />
-            <img
-              src="https://picsum.photos/1080/360"
-              class="img-sq-md"
-              alt=""
-            />
-            <img
-              src="https://picsum.photos/1080/360"
-              class="img-sq-lg"
-              alt=""
-            />
+            <ul class="list-group">
+              <li class="list-item-stacked">An item</li>
+              <li class="list-item-stacked">A second item</li>
+              <li class="list-item-stacked">A third item</li>
+              <li class="list-item-stacked">A fourth item</li>
+              <li class="list-item-stacked">And a fifth one</li>
+            </ul>
           </div>
           <div class="demo-code">
             <pre>
-                <code class="html">
-  &lt;img src="..." class="img-sq-sm" alt="..." /&gt;
-  &lt;img src="..." class="img-sq-md" alt="..." /&gt;
-  &lt;img src="..." class="img-sq-lg" alt="..." /&gt;
-                </code>
-            </pre>
-          </div>
-        </div>
-        <div class="divider"></div>
-
-        <div class="content">
-          <div class="content-title">Round Images</div>
-          <div class="description">
-            Round images can be created using 'img-round' class. For best
-            results use it with the 'Square Images' classes.
-          </div>
-          <div class="demo">
-            <img
-              src="https://picsum.photos/1080/360"
-              class="img-sq-sm img-round"
-              alt=""
-            />
-            <img
-              src="https://picsum.photos/1080/360"
-              class="img-sq-md img-round"
-              alt=""
-            />
-            <img
-              src="https://picsum.photos/1080/360"
-              class="img-sq-lg img-round"
-              alt=""
-            />
-          </div>
-          <div class="demo-code">
-            <pre>
-                <code class="html">
-  &lt;img src="..." class="img-sq-sm img-round" alt="..." /&gt;
-  &lt;img src="..." class="img-sq-md img-round" alt="..." /&gt;
-  &lt;img src="..." class="img-sq-lg img-round" alt="..." /&gt;
-                </code>
-            </pre>
+                  <code class="html">
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-item-stacked"&gt;An item&lt;/li&gt;
+    &lt;li class="list-item-stacked"&gt;A second item&lt;/li&gt;
+    &lt;li class="list-item-stacked"&gt;A third item&lt;/li&gt;
+    &lt;li class="list-item-stacked"&gt;A fourth item&lt;/li&gt;
+    &lt;li class="list-item-stacked"&gt;And a fifth one&lt;/li&gt;
+  &lt;/ul&gt;
+                  </code>
+              </pre>
           </div>
         </div>
       </main>
