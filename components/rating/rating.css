@@ -1,0 +1,18 @@
+.ratings {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
+.rating-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--green);
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+}
+
+.rating-badge > .material-icons {
+  font-size: 0.9rem;
+}

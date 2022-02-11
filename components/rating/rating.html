@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg UI - Rating</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="./rating.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-heading">
+        <a href="/"
+          ><img
+            class="nav-logo"
+            src="../../assets/iceberg-logo.svg"
+            alt="iceberg-logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="/get-started/introduction.html">Docs</a>
+        </li>
+        <li class="nav-link">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+        <li class="nav-link">
+          <a href="/get-started/contribution.html">Contribute</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside class="drawer">
+        <div class="drawer-subheader">Get Started</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/get-started/introduction.html">Introduction</a>
+          </li>
+          <li class="drawer-item"><a href="#">Colors</a></li>
+          <li class="drawer-item">
+            <a href="/get-started/typography.html">Typography</a>
+          </li>
+          <li class="drawer-item"><a href="#">Contribution</a></li>
+        </ul>
+        <hr class="divider" />
+        <div class="drawer-subheader">Components</div>
+        <ul>
+          <li class="drawer-item">
+            <a href="/components/alert/alert.html">Alert</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/avatar/avatar.html">Avatar</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/badge/badge.html">Badge</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/button/button.html">Button</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/card/card.html">Card</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/image/image.html">Image</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/input/input.html">Input</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/lists/lists.html">Lists</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/modal/modal.html">Modal</a>
+          </li>
+          <li class="drawer-item">
+            <a href="/components/navigation/navigation.html">Navigation</a>
+          </li>
+          <li class="drawer-item drawer-item-active">
+            <a href="/components/rating/rating.html">Rating</a>
+          </li>
+          <li class="drawer-item"><a href="#">Grid</a></li>
+          <li class="drawer-item"><a href="#">Slider</a></li>
+          <li class="drawer-item">
+            <a href="/components/toast/toast.html">Toast (Snackbar)</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-title">Rating</div>
+          <div class="description">
+            Rating shows the opinion of others and their experience with the
+            product.
+          </div>
+        </header>
+
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Filled Ratings</div>
+          <div class="description">
+            To create filled rating component, use the 'ratings' class. For the
+            icons here 'material-icons' are used.
+          </div>
+          <div class="demo">
+            <div class="ratings material-icons">
+              star star star star_outline star_outline
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="ratings material-icons"&gt;
+      star star star star_outline star_outline
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Rating Badge</div>
+          <div class="description">
+            To create a smaller rating component, use the 'rating-badge' class.
+          </div>
+          <div class="demo">
+            <div class="rating-badge">
+              4.1 <span class="material-icons">star</span>
+            </div>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+  &lt;div class="rating-badge"&gt;
+      4.1 &lt;span class="material-icons"&gt;star&lt;/span&gt;
+  &lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
