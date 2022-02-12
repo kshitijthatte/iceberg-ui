@@ -100,6 +100,41 @@ iframe.demo {
   gap: 1rem;
 }
 
+.demo-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.demo-colors > * {
+  padding: 1rem;
+  flex: 1 0 30%;
+}
+
+.demo-colors .primary {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+.demo-colors .light-blue {
+  background-color: var(--light-blue);
+}
+.demo-colors .green {
+  background-color: var(--green);
+}
+.demo-colors .red {
+  background-color: var(--red);
+}
+.demo-colors .yellow {
+  background-color: var(--yellow);
+}
+.demo-colors .white {
+  background-color: var(--white);
+  border: 1px solid var(--light-grey);
+}
+.demo-colors .light-grey {
+  background-color: var(--light-grey);
+}
+
 @media screen and (max-width: 700px) {
   .container {
     flex-direction: column;

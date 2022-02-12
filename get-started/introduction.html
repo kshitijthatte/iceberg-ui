@@ -10,8 +10,13 @@
       href="../assets/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../components/button/button.css" />
   </head>
   <body>
     <nav class="nav">
@@ -43,11 +48,15 @@
           <li class="drawer-item drawer-item-active">
             <a href="./introduction.html">Introduction</a>
           </li>
-          <li class="drawer-item"><a>Colors</a></li>
+          <li class="drawer-item">
+            <a href="/get-started/colors.html">Colors</a>
+          </li>
           <li class="drawer-item">
             <a href="/get-started/typography.html">Typography</a>
           </li>
-          <li class="drawer-item"><a>Contribution</a></li>
+          <li class="drawer-item">
+            <a href="/get-started/contribution.html">Contribution</a>
+          </li>
         </ul>
         <hr class="divider" />
         <div class="drawer-subheader">Components</div>
@@ -99,13 +108,61 @@
       <main class="main">
         <header class="header">
           <div class="header-title">Introduction to Iceberg</div>
-          <div class="header-description">
+          <div class="description">
             Iceberg is an open-souce CSS library that provides plenty of UI
             components to enrich your web applications.
           </div>
         </header>
-        <div class="content"></div>
+
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Installation</div>
+          <div class="description">
+            To use Iceberg UI in your project, copy-paste the stylesheet
+            &lt;link&gt; into your &lt;head&gt; before all other stylesheets to
+            load our CSS.
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+&lt;link rel="stylesheet" href="https://iceberg-ui.netlify.app/styles.css"&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Customization</div>
+          <div class="description">
+            In order to override Iceberg UI's base classes, users can add their
+            own class to the pre-existing classes, and style them seperately.
+          </div>
+          <div class="demo">
+            <style>
+              .custom {
+                background-color: #ed602d;
+              }
+            </style>
+            <button class="btn btn-primary custom">Custom Button</button>
+          </div>
+          <div class="demo-code">
+            <pre>
+                <code class="html">
+&lt;style&gt;
+  .custom { background-color: #ed602d; }
+&lt;/style&gt;
+&lt;button class="btn btn-primary custom"&gt;Custom Button&lt;/button&gt;
+                </code>
+            </pre>
+          </div>
+        </div>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

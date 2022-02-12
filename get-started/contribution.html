@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iceberg UI - Slider</title>
+    <title>Iceberg UI - Contribution</title>
     <link
       rel="shortcut icon"
       href="../../assets/favicon.ico"
@@ -16,7 +16,6 @@
     />
     <link rel="stylesheet" href="../../css/nav.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
-    <link rel="stylesheet" href="./slider.css" />
   </head>
   <body>
     <nav class="nav">
@@ -54,7 +53,7 @@
           <li class="drawer-item">
             <a href="/get-started/typography.html">Typography</a>
           </li>
-          <li class="drawer-item">
+          <li class="drawer-item drawer-item-active">
             <a href="/get-started/contribution.html">Contribution</a>
           </li>
         </ul>
@@ -97,7 +96,7 @@
           <li class="drawer-item">
             <a href="/components/grid/grid.html">Grid</a>
           </li>
-          <li class="drawer-item drawer-item-active">
+          <li class="drawer-item">
             <a href="/components/slider/slider.html">Slider</a>
           </li>
           <li class="drawer-item">
@@ -108,66 +107,24 @@
 
       <main class="main">
         <header class="header">
-          <div class="header-title">Slider</div>
+          <div class="header-title">Contribution</div>
           <div class="description">
-            Sliders allow users to make selections from a range of values. Two
-            types of sliders are available, basic slider and steps slider.
+            We use
+            <a href="https://github.com/kshitijthatte/iceberg-ui/issues">
+              GitHub issues
+            </a>
+            to track all our bugs and feature requests. When
+            <a href="https://github.com/kshitijthatte/iceberg-ui/issues/new/"
+              >submitting a new issue</a
+            >, please check that it hasn't already been raised by someone else.
+          </div>
+          <div class="description">
+            To work on an issue, please fork this repo and create a new branch
+            on your local fork. When you're happy and would like to propose that
+            changeset to be merged back upstream, open a pull request to merge
+            from your local origin/master to upstream/master.
           </div>
         </header>
-
-        <hr class="divider" />
-
-        <div class="content">
-          <div class="content-title">Basic Slider</div>
-          <div class="description">
-            To create a basic slider, use 'slider' class on
-            <code>&lt;input type="range"&gt;</code> element.
-          </div>
-          <div class="demo">
-            <label for="demoSlider1">Example range</label>
-            <input type="range" class="slider" id="demoSlider1" />
-          </div>
-          <div class="demo-code">
-            <pre>
-                <code class="html">
-    &lt;label for="demoSlider1"&gt;Example range&lt;/label&gt;
-    &lt;input type="range" class="slider" id="demoSlider1" /&gt;
-                </code>
-            </pre>
-          </div>
-        </div>
-        <hr class="divider" />
-
-        <div class="content">
-          <div class="content-title">Steps Slider</div>
-          <div class="description">
-            Range inputs have implicit values for min and max—0 and 100,
-            respectively. New values can be specified for those using the min
-            and max attributes. By default, range inputs "snap" to integer
-            values. To change this, we can specify a <code>step</code> value. In
-            the example below, we double the number of steps by using
-            <code>step="0.5"</code>.
-          </div>
-          <div class="demo">
-            <label for="demoSlider2">Example range</label>
-            <input
-              type="range"
-              class="slider"
-              min="0"
-              max="5"
-              step="0.5"
-              id="demoSlider2"
-            />
-          </div>
-          <div class="demo-code">
-            <pre>
-                <code class="html">
-  &lt;label for="demoSlider2"&gt;Example range&lt;/label&gt;
-  &lt;input type="range" class="slider" min="0" max="5" step="0.5" id="demoSlider2" /&gt;
-                </code>
-            </pre>
-          </div>
-        </div>
       </main>
     </div>
 

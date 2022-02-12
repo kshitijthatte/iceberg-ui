@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iceberg UI - Slider</title>
+    <title>Iceberg UI - Colors</title>
     <link
       rel="shortcut icon"
       href="../../assets/favicon.ico"
@@ -16,7 +16,6 @@
     />
     <link rel="stylesheet" href="../../css/nav.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
-    <link rel="stylesheet" href="./slider.css" />
   </head>
   <body>
     <nav class="nav">
@@ -48,7 +47,7 @@
           <li class="drawer-item">
             <a href="/get-started/introduction.html">Introduction</a>
           </li>
-          <li class="drawer-item">
+          <li class="drawer-item drawer-item-active">
             <a href="/get-started/colors.html">Colors</a>
           </li>
           <li class="drawer-item">
@@ -97,7 +96,7 @@
           <li class="drawer-item">
             <a href="/components/grid/grid.html">Grid</a>
           </li>
-          <li class="drawer-item drawer-item-active">
+          <li class="drawer-item">
             <a href="/components/slider/slider.html">Slider</a>
           </li>
           <li class="drawer-item">
@@ -108,65 +107,21 @@
 
       <main class="main">
         <header class="header">
-          <div class="header-title">Slider</div>
+          <div class="header-title">Colors</div>
           <div class="description">
-            Sliders allow users to make selections from a range of values. Two
-            types of sliders are available, basic slider and steps slider.
+            Iceberg comes with pre-defined colors, that are CSS variables. This
+            enables more comprehensive customization and extension for any
+            project.
           </div>
         </header>
-
-        <hr class="divider" />
-
-        <div class="content">
-          <div class="content-title">Basic Slider</div>
-          <div class="description">
-            To create a basic slider, use 'slider' class on
-            <code>&lt;input type="range"&gt;</code> element.
-          </div>
-          <div class="demo">
-            <label for="demoSlider1">Example range</label>
-            <input type="range" class="slider" id="demoSlider1" />
-          </div>
-          <div class="demo-code">
-            <pre>
-                <code class="html">
-    &lt;label for="demoSlider1"&gt;Example range&lt;/label&gt;
-    &lt;input type="range" class="slider" id="demoSlider1" /&gt;
-                </code>
-            </pre>
-          </div>
-        </div>
-        <hr class="divider" />
-
-        <div class="content">
-          <div class="content-title">Steps Slider</div>
-          <div class="description">
-            Range inputs have implicit values for min and max—0 and 100,
-            respectively. New values can be specified for those using the min
-            and max attributes. By default, range inputs "snap" to integer
-            values. To change this, we can specify a <code>step</code> value. In
-            the example below, we double the number of steps by using
-            <code>step="0.5"</code>.
-          </div>
-          <div class="demo">
-            <label for="demoSlider2">Example range</label>
-            <input
-              type="range"
-              class="slider"
-              min="0"
-              max="5"
-              step="0.5"
-              id="demoSlider2"
-            />
-          </div>
-          <div class="demo-code">
-            <pre>
-                <code class="html">
-  &lt;label for="demoSlider2"&gt;Example range&lt;/label&gt;
-  &lt;input type="range" class="slider" min="0" max="5" step="0.5" id="demoSlider2" /&gt;
-                </code>
-            </pre>
-          </div>
+        <div class="demo-colors">
+          <div class="primary">var(--primary-color)</div>
+          <div class="light-blue">var(--light-blue)</div>
+          <div class="green">var(--green)</div>
+          <div class="red">var(--red)</div>
+          <div class="yellow">var(--yellow)</div>
+          <div class="white">var(--white)</div>
+          <div class="light-grey">var(--light-grey)</div>
         </div>
       </main>
     </div>
