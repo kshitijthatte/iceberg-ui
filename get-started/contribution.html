@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iceberg UI - Introduction</title>
+    <title>Iceberg UI - Contribution</title>
     <link
       rel="shortcut icon"
-      href="../assets/favicon.ico"
+      href="../../assets/favicon.ico"
       type="image/x-icon"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
     />
-    <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../components/button/button.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
   </head>
   <body>
     <nav class="nav">
@@ -24,7 +23,7 @@
         <a href="/"
           ><img
             class="nav-logo"
-            src="../assets/iceberg-logo.svg"
+            src="../../assets/iceberg-logo.svg"
             alt="iceberg-logo"
         /></a>
       </div>
@@ -45,8 +44,8 @@
       <aside class="drawer">
         <div class="drawer-subheader">Get Started</div>
         <ul>
-          <li class="drawer-item drawer-item-active">
-            <a href="./introduction.html">Introduction</a>
+          <li class="drawer-item">
+            <a href="/get-started/introduction.html">Introduction</a>
           </li>
           <li class="drawer-item">
             <a href="/get-started/colors.html">Colors</a>
@@ -54,7 +53,7 @@
           <li class="drawer-item">
             <a href="/get-started/typography.html">Typography</a>
           </li>
-          <li class="drawer-item">
+          <li class="drawer-item drawer-item-active">
             <a href="/get-started/contribution.html">Contribution</a>
           </li>
         </ul>
@@ -105,61 +104,30 @@
           </li>
         </ul>
       </aside>
+
       <main class="main">
         <header class="header">
-          <div class="header-title">Introduction to Iceberg</div>
+          <div class="header-title">Contribution</div>
           <div class="description">
-            Iceberg is an open-souce CSS library that provides plenty of UI
-            components to enrich your web applications.
+            We use
+            <a href="https://github.com/kshitijthatte/iceberg-ui/issues">
+              GitHub issues
+            </a>
+            to track all our bugs and feature requests. When
+            <a href="https://github.com/kshitijthatte/iceberg-ui/issues/new/"
+              >submitting a new issue</a
+            >, please check that it hasn't already been raised by someone else.
+          </div>
+          <div class="description">
+            To work on an issue, please fork this repo and create a new branch
+            on your local fork. When you're happy and would like to propose that
+            changeset to be merged back upstream, open a pull request to merge
+            from your local origin/master to upstream/master.
           </div>
         </header>
-
-        <hr class="divider" />
-
-        <div class="content">
-          <div class="content-title">Installation</div>
-          <div class="description">
-            To use Iceberg UI in your project, copy-paste the stylesheet
-            &lt;link&gt; into your &lt;head&gt; before all other stylesheets to
-            load our CSS.
-          </div>
-          <div class="demo-code">
-            <pre>
-                <code class="html">
-&lt;link rel="stylesheet" href="https://iceberg-ui.netlify.app/styles.css"&gt;
-                </code>
-            </pre>
-          </div>
-        </div>
-        <hr class="divider" />
-
-        <div class="content">
-          <div class="content-title">Customization</div>
-          <div class="description">
-            In order to override Iceberg UI's base classes, users can add their
-            own class to the pre-existing classes, and style them seperately.
-          </div>
-          <div class="demo">
-            <style>
-              .custom {
-                background-color: #ed602d;
-              }
-            </style>
-            <button class="btn btn-primary custom">Custom Button</button>
-          </div>
-          <div class="demo-code">
-            <pre>
-                <code class="html">
-&lt;style&gt;
-  .custom { background-color: #ed602d; }
-&lt;/style&gt;
-&lt;button class="btn btn-primary custom"&gt;Custom Button&lt;/button&gt;
-                </code>
-            </pre>
-          </div>
-        </div>
       </main>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
