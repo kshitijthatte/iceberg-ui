@@ -44,3 +44,61 @@
 .nav-fixed-adjust {
   margin-top: 5rem;
 }
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Drawer */
+
+.drawer-frame {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 16rem;
+  border-right: 1px solid var(--light-grey);
+  height: 100%;
+}
+
+.drawer-header {
+  padding: 1rem 1rem;
+}
+
+.drawer-content {
+  overflow-y: auto;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.side-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: inherit;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.side-nav-item:hover {
+  background-color: var(--secondary-hover);
+}
+
+.drawer-frame .main {
+  width: 100%;
+  overflow-y: auto;
+}
