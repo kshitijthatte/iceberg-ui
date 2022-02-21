@@ -182,6 +182,79 @@
               </pre>
           </div>
         </div>
+        <hr class="divider" />
+
+        <div class="content">
+          <div class="content-title">Dismissible Drawer Navigation</div>
+          <div class="description">
+            To create a dismissible drawer navigation, use the 'drawer-frame'
+            class. And inside that use the 'drawer' class to create the aside
+            drawer, use the 'drawer-header' class for it's header and
+            'drawer-content' class to wrap contents. To create a side nav in
+            that drawer use 'side-nav' class and 'side-nav-item' for nav items.
+            <br />
+            It's impotrant to add 'header-navigation-icon' class on the menu
+            icon for the drawer to work. Finally, add this JS file (script tag)
+            before the closing body tag.
+            <br />
+            <div class="demo-code">
+              <pre>
+                    <code class="html">
+  &lt;script src="https://iceberg-ui.netlify.app/components/navigation/drawer-nav.js"&gt;&lt;/script&gt;
+                    </code>
+                </pre>
+            </div>
+            <a target="_" href="./demo-3.html">View Demo</a>
+          </div>
+          <iframe class="demo" src="./demo-3.html" frameborder="1"> </iframe>
+          <div class="demo-code">
+            <pre>
+                  <code class="html">
+  &lt;div class="drawer-frame"&gt;
+    &lt;aside class="drawer"&gt;
+      &lt;div class="drawer-header"&gt;
+        &lt;div&gt;Hi, User&lt;/div&gt;
+        &lt;div&gt;jhondoe@tmail.com&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;hr class="divider" /&gt;
+      &lt;div class="drawer-content"&gt;
+        &lt;nav class="side-nav"&gt;
+          &lt;a class="side-nav-item" href="#"&gt;
+            &lt;span class="material-icons"&gt;play_arrow&lt;/span&gt;
+            Nav Item 1
+          &lt;/a&gt;
+          &lt;a class="side-nav-item" href="#"&gt;
+            &lt;span class="material-icons"&gt;leaderboard&lt;/span&gt;
+            Nav Item 2
+          &lt;/a&gt;
+          &lt;!-- More Side Nav Items --&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/aside&gt;
+    &lt;div class="main"&gt;
+      &lt;!-- Standard Nav --&gt;
+      &lt;nav class="nav"&gt;
+        &lt;div class="nav-section"&gt;
+          &lt;button class="material-icons nav-icon header-navigation-icon"&gt;
+            menu
+          &lt;/button&gt;
+          &lt;span class="nav-title"&gt;Brand Name&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-section nav-section-right"&gt;
+          &lt;button class="material-icons nav-icon"&gt;file_download&lt;/button&gt;
+          &lt;button class="material-icons nav-icon"&gt;print&lt;/button&gt;
+          &lt;button class="material-icons nav-icon"&gt;bookmark&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      &lt;div&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                  </code>
+              </pre>
+          </div>
+        </div>
       </main>
     </div>
 
